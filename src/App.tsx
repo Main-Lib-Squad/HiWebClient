@@ -1,4 +1,5 @@
 import LoginPage from './components/authentication/LoginPage';
+import RestaurantHome from './components/restaurant/RestaurantHome';
 import { RootState } from './redux/globalStore';
 import { useSelector } from 'react-redux';
 import ThemeModeSelect from './components/home/ThemModeSelect';
@@ -10,9 +11,11 @@ const App = () => {
 
   return (
     <AppTheme>
-      <ThemeModeSelect sx={{ position: 'fixed', top: '1rem', right: '1rem' }}>
+      {/* <ThemeModeSelect sx={{ position: 'fixed', top: '1rem', right: '1rem' }}>
         <LoginPage />
-      </ThemeModeSelect>
+      </ThemeModeSelect> */}
+      <RestaurantHome />
+
     </AppTheme>
   );
 };
